@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+    <meta charset="UTF-8">
+    <title>АКПРФ</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="back">
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+    <div class="subBack"></div>
+</div>
+<!--<canvas id="background"></canvas>-->
+<div id="greeting">
+<h1 id="tyanBySign">АКПРФ</h1><h4 id="credits">БОРИС ХЕСИН</h4><h5  id="getMail"><a>❗️❗️❗️ВАЖНОЕ ОБРАЩЕНИЕ❗️❗️❗️
+Товарищи социал-демократы, минархисты, анархо-капиталисты, националисты!
+СПАСИБО ВАМ ВСЕМ ЗА ПОБЕДУ НА ВЫБОРАХ, УРА УРА УРА!</a></h5>
+    <p> до региона: </p>
+    <p id="demo"></p>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 16, 2022 9:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "РЕГИОН ИДЁТ/ПРОШЁЛ";
+            }
+        }, 1000);
+    </script>
+    <p>Лучший Кандидат: <a href="https://t.me/shagulka">КЛИК</a></p>
+</div>
+<!--<script src="index.js"></script>-->
+</body>
+</html>
